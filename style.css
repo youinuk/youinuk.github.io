@@ -3,3 +3,5 @@
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}@media print{.site-header{position:static}.menu-toggle,.player,.site-footer{display:none}.wrap{width:100%}.section{padding-block:25px}a{color:#000}.hero-aside{background:#fff;color:#000}.hero-aside p,.hero-aside .kicker,.hero-aside .text-link{color:#000}}
 .thumb-fallback{position:absolute;left:22px;bottom:15px;right:22px;text-align:left;color:#bfccd5;font-size:13px;letter-spacing:.08em;text-transform:uppercase}.play-button img{position:absolute;inset:0}.play-icon{z-index:1}
 [hidden]{display:none!important}
+
+.profile-page .row{grid-template-columns:minmax(0,1fr)}
