@@ -1,3 +1,8 @@
+// Keep previously shared project links pointed at their new sections.
+if(location.pathname.endsWith('/projects.html')){
+ const moved={'#spin-valley':'research.html#recent-manuscript','#parallel-control':'research.html#parallel-control','#qiskit-study':'qiskit.html#qiskit-study'};
+ if(moved[location.hash])location.replace(moved[location.hash]);
+}
 const toggle=document.querySelector('.menu-toggle');
 const nav=document.querySelector('.main-nav');
 if(toggle&&nav){toggle.addEventListener('click',()=>{const expanded=toggle.getAttribute('aria-expanded')==='true';toggle.setAttribute('aria-expanded',String(!expanded));nav.classList.toggle('open',!expanded);});document.addEventListener('keydown',e=>{if(e.key==='Escape'&&nav.classList.contains('open')){nav.classList.remove('open');toggle.setAttribute('aria-expanded','false');toggle.focus();}});}
