@@ -5,3 +5,11 @@
 [hidden]{display:none!important}
 
 .profile-page .row{grid-template-columns:minmax(0,1fr)}
+
+/* Homepage navigation and reference labels. */
+.home-hero{padding-block:68px 58px;gap:52px;grid-template-columns:minmax(0,1.35fr) minmax(0,.85fr)}
+.home-hero h1{font-size:clamp(40px,4.5vw,64px);line-height:1.12;letter-spacing:-.035em}
+.home-hero .hero-aside h2{font-size:clamp(25px,2.4vw,32px)}
+.home-sections{padding:0 0 48px}.home-sections .work-card h2{font-size:29px;margin-bottom:15px}.home-sections .work-card p{font-size:16px}.home-sections .work-card .text-link{margin-top:auto}
+.reading-title{display:block;font-size:13px;line-height:1.5;margin-top:5px}.publication .actions{flex-wrap:wrap}
+@media(max-width:760px){.home-hero{grid-template-columns:1fr;padding-block:44px;gap:30px}.home-hero h1{font-size:clamp(36px,8.9vw,54px)}.home-sections{padding-bottom:35px}}
